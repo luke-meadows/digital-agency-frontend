@@ -1,26 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'SpecifyPERSONAL';
+  src: url('/fonts/SpecifyPERSONAL-ExpLight.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SpecifyPERSONAL';
+  src: url('/fonts/SpecifyPERSONAL-ExpBold.ttf');
+  font-style: bold;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SpecifyPERSONAL';
+  src: url('/fonts/SpecifyPERSONAL-ExpLight.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'SpecifyPERSONAL';
+  src: url('/fonts/SpecifyPERSONAL-ExpBlack.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  color: white;
+  background: #111928;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h1 {
+  letter-spacing: 2px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'SpecifyPERSONAL', -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
+a,
+button {
+  color: #111928;
+  font-size: 1rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+p {
+  font-family: 'Poppins';
+  font-weight: 300;
+  color: #e9e9e9;
 }
